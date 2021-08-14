@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Minha Empresa</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img style="margin-left: 15px;" src="./Img/data-lock_icon-icons.com_52840.png" alt="" width="50" height="50" class="d-inline-block align-text-center">
+            <!--Meu Logo-->
+          </a>
+         <div class="buttom">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#scroll-firt">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll-second">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll-third">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scroll-fourth">Contato</a>
+              </li>
+          </ul>
+         </div>
+        </div>
+    </nav>
+    
+    <div id="scroll-firt"></div>
+    <br>
+
+    <div class="background-texture-firt">
+      <div id="firtHome">
+        <h5><b style="font-size: 25px;">Minha Empresa</b>
+            <br>
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5> 
+        <img class="photoHome" src="./Img/PhotoHome.png" class="rounded float-end" alt="" width="40%" height="40%">
+      </div>
+    </div>
+
+    <div id="scroll-second"></div>
+
+    <div class="background-texture-second">
+        <div id="secondeWhoWeAre">
+          <img class="photoWhoWeAre" src="./Img/PhotoQuemSomos.png" class="rounded float-end" alt="" width="40%" height="40%">
+          <h5><b style="font-size: 25px;">Quem Somos</b>
+              <br>
+              <br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5> 
+        </div>
+      </div>
+
+      <div id="scroll-third"></div>
+
+      <div class="background-texture-third">
+        <div id="thirdService">
+          <h5><b style="font-size: 25px;">Serviços</b>
+              <br>
+              <br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
+          <img class="photoService" src="./Img/PhotoServiços.png" class="rounded float-end" alt="" width="40%" height="40%">
+        </div>
+      </div>
+
+      <div id="scroll-fourth"></div>
+
+      <div class="background-texture-fourth">
+        <div id="fourthContact">
+          <h5><b style="font-size: 25px;">Contato</b>
+              <br>
+              <br>
+              Entre em contato conosco através do formulário.</h5>
+              <br>
+              <!--<form id="contatoForm" method="get" action="mailto:exemplo@exemplo.com" target="_blank">-->
+              
+                <div class="row g-3" style=" margin-bottom: 0px; margin-left: 0px; margin-top: 0px; padding-bottom: 0px;">
+                  <div class="col-md-6">
+                    <label for="inputName4" class="form-label">Nome Completo</label>
+                    <input id="inputName4" type="text" class="form-control" name="usuario_name" value=""/>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">E-mail para contato:</label>
+                    <input type="email" class="form-control" id="inputEmail4" autocomplete="username" name="usuario_email" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Assunto:</label>
+                    <textarea type="text" class="form-control" id="exampleFormControlSubject" rows="1" name="usuario_subject"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comentário:</label>
+                    <textarea type="msg" class="form-control" id="exampleFormControlTextarea1" rows="3" name="usuario_msg"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" value="alert" onclick="funcaoAlert()" id="enviar" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
+
+      <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="https://meusite"> meusite.com.br</a>
+        </div>
+      </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="./main.js"></script>
+</html>
